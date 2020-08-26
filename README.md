@@ -1,11 +1,16 @@
-# PortBlocker
+# PortBlocker 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-## To enhance the security of your nix device
+
+
+### To enhance the security of your nix device
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 This script basically creates iptable rules for blocking any incoming traffic/connection so that the applicaiton port is not discovered even by the means of port knocking
 
-## In the script you have to change the `local_address = xxx.xxx.xxx.xxx` with the IP address that shows on your NAC or tunnel in case of a VPN.
+#### In the script you have to change the `local_address = xxx.xxx.xxx.xxx` with the IP address that shows on your NAC or tunnel in case of a VPN.
 To find the ip address of your device over a network you can simply use the `ifconfig <adapter> | grep inet` command by replacing the adapter with suitable value like `en0`. 
+
 The output will look something similar to the following:
 
 >inet6 fe80::106f:596b:b1e2:1579%en0 prefixlen 64 secured scopeid 0x4 
@@ -17,6 +22,8 @@ The output will look something similar to the following:
 - [x] Ship for all linux version
 - [x] Add UDP listner 
 - [x] Use Hashing for Auth
--[] Use TLS for UDP
--[] Ship for MacOS
--[] API integration for Auth
+- [ ] Use TLS for UDP
+- [ ] Ship for MacOS
+- [ ] API integration for Auth
+
+
