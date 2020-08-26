@@ -14,11 +14,11 @@ To find the ip address of your device over a network you can simply use the `ifc
 The output will look something similar to the following:
 
 >inet6 fe80::106f:596b:b1e2:1579%en0 prefixlen 64 secured scopeid 0x4
-
+>
 >inet 172.20.10.6 netmask 0xfffffff0 broadcast 172.20.10.15
-
+>
 >inet6 2401:4900:b94:2576:43d:373a:8ece:90d2 prefixlen 64 autoconf secured
-
+>
 >inet6 2401:4900:b94:2576:b08e:1faf:58bf:a9ba prefixlen 64 autoconf temporary
 
 
