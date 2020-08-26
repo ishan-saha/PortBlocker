@@ -1,6 +1,6 @@
-#PortBlocker
+# PortBlocker
 
-##To enhance the security of your nix device
+## To enhance the security of your nix device
 
 This script basically creates iptable rules for blocking any incoming traffic/connection so that the applicaiton port is not discovered even by the means of port knocking
 
@@ -17,6 +17,6 @@ The output will look something similar to the following:
 - [x] Ship for all linux version
 - [x] Add UDP listner 
 - [x] Use Hashing for Auth
-- [] Use TLS for UDP
-- [] Ship for MacOS
-- [] API integration for Auth
+[] Use TLS for UDP
+[] Ship for MacOS
+[] API integration for Auth
