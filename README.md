@@ -1,7 +1,7 @@
 
 # PortBlocker
 
-##To enhance the security of your nix device
+## To enhance the security of your nix device
 
 # PortBlocker 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
@@ -10,7 +10,7 @@
 
 ### To enhance the security of your nix device
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
->>>>>>> 77d553669d3d0de73bf726da37e72db221857469
+
 
 This script basically creates iptable rules for blocking any incoming traffic/connection so that the applicaiton port is not discovered even by the means of port knocking. :bangbang: Run this script with sudo!
 
