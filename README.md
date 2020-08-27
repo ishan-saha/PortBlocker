@@ -32,6 +32,7 @@ The output will look something similar to the following:
 - [x] Ship for all linux version
 - [x] Add UDP listner 
 - [x] Use Hashing for Auth
+- [x] Added GUI for client auth
 - [ ] Use TLS for UDP
 - [ ] Ship for MacOS
 - [ ] API integration for Auth

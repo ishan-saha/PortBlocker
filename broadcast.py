@@ -34,3 +34,5 @@ class BroadCastReceiver:
     def __exit__(self,exc_type, exc_value, traceback):
         # the destructor to make the socket reusable again
         self.SOCKET.close()
+    def sender(address,data):
+        self.SOCKET.sendto(data,address)
