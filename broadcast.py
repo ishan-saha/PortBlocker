@@ -15,6 +15,9 @@ class BroadCastReceiver:
         #setting the msg length
         self.msg_length=msg_length
     
+    def sender(self,address,data):
+        self.SOCKET.sendto(data,address)
+    
     def __iter__(self):
         # returns the current object for iteration
         return self
@@ -34,5 +37,3 @@ class BroadCastReceiver:
     def __exit__(self,exc_type, exc_value, traceback):
         # the destructor to make the socket reusable again
         self.SOCKET.close()
-    def sender(address,data):
-        self.SOCKET.sendto(data,address)
