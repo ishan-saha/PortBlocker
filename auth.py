@@ -25,7 +25,6 @@ def auth():
         sender_sock=socket(AF_INET,SOCK_DGRAM)
         sender_sock.sendto(data,Server)
         Auth=sender_sock.recvfrom(5)
-        print(Auth)
         if Auth== 'True':
             return "<html><body><script>alert('Authenticated');</script></body></html>"
         else:
