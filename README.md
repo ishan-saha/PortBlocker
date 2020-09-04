@@ -27,7 +27,7 @@ The output will look something similar to the following:
 Find the IP address using the above mentioned process and then update the `portblock.py` and `auth.py` accordingly and keep the port 9090 open or change according to your need.
 Run the `portblock.py` wtih python 3.7 in the machine to protect and keep the `broadcast.py` in the same directory as it is required library.
 In the Aunthenticating machine install the necessary libraries with `sudo pip3 install -r requirments.txt` and simply run the `auth.py` in python 3.7 interpreter. Authenticate in GUI. Done!
-For non GUI simply use the file `login.py` and change the `Server' variable.
+For non GUI simply use the file `login.py` and change the `Server` variable.
 
 ### Future Changes:
 - [x] Ship for all linux version
