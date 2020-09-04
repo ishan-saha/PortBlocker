@@ -32,7 +32,7 @@ For non GUI simply use the file `login.py` and change the `Server` variable.
 ### For Mac:
 Start by running the srcipt after changes then open `/etc/pf.conf` using nano or vim and add the following line:
 >
-> pass in proto tcp from any to any port 9090
+> pass in proto udp from any to any port 9090
 >
 After that simply restart the pf service by running the following command: 
 >
