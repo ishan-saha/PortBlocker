@@ -5,7 +5,10 @@ from flask import request , url_for
 
 app = flask(__name__)
 
-Server=('xxx.xxx.xxx.xxx',9090)
+Server=('127.0.0.1',9090)
+
+sender_sock=socket(AF_INET,SOCK_DGRAM)
+sender_sock.connect(Server)
 
 @app.route("/")
 def index():
@@ -22,10 +25,9 @@ def index():
 def auth():
     if request.method == 'POST':
         data=request.form['username'].encode()+b'-'+base64.b64encode(request.form['passwd'].encode())
-        sender_sock=socket(AF_INET,SOCK_DGRAM)
-        sender_sock.sendto(data,Server)
+        sender_sock.send(data)
         Auth=sender_sock.recvfrom(5)
-        if Auth== 'True':
+        if bool(Auth[0]) == True:
             return "<html><body><script>alert('Authenticated');</script></body></html>"
         else:
             return "<html><body><script>alert('Failed');</script></body></html>"
@@ -37,3 +39,10 @@ flaskapp.daemon = True
 flaskapp.start()
 window = webview.create_window('Authenticate','http://127.0.0.1:5000')
 webview.start()
+while True:
+    if window.closing:
+        try:
+            sender_sock.send(b'')
+            sender_sock.close()
+        except:
+            pass

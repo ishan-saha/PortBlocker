@@ -34,7 +34,7 @@ For non GUI simply use the file `login.py` and change the `Server' variable.
 - [x] Add UDP listner 
 - [x] Use Hashing for Auth
 - [x] Added GUI for client auth
-- [ ] Use TLS for UDP
-- [ ] Ship for MacOS
+- [x] Ship for MacOS
+- [ ] Add TLS on UDP
 - [ ] API integration for Auth
 

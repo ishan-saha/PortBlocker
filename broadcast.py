@@ -21,7 +21,15 @@ class BroadCastReceiver:
     def __iter__(self):
         # returns the current object for iteration
         return self
-    
+    def CloseConnection(self):
+        # returns true if the socket is closed by the client
+        try:
+            data = self.SOCKET.recv(12)
+            if data is b'':
+                return True
+        except:
+            pass
+        
     def __next__(self):
         # try to fetch the data and return the data + sender_address if the final step the close with stopiteration 
         try:
