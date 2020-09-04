@@ -29,6 +29,16 @@ Run the `portblock.py` wtih python 3.7 in the machine to protect and keep the `b
 In the Aunthenticating machine install the necessary libraries with `sudo pip3 install -r requirments.txt` and simply run the `auth.py` in python 3.7 interpreter. Authenticate in GUI. Done!
 For non GUI simply use the file `login.py` and change the `Server` variable.
 
+### For Mac:
+Start by running the srcipt after changes then open `/etc/pf.conf` using nano or vim and add the following line:
+>
+> pass in proto tcp from any to any port 9090
+>
+After that simply restart the pf service by running the following command: 
+>
+>sudo pfctl -f /etc/pf.conf
+>
+
 ### Future Changes:
 - [x] Ship for all linux version
 - [x] Add UDP listner 
